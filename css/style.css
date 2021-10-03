@@ -399,7 +399,7 @@ section {
 
 /* media queries */
 
-@media (max-width: 991px) {
+@media (max-width: 1080px) {
 
     html {
         font-size: 55%;
@@ -452,5 +452,25 @@ section {
 
     .heading {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 35%;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 280px) {
+    html {
+        font-size: 30%;
+    }
+
+    .heading {
+        font-size: 2rem;
     }
 }
