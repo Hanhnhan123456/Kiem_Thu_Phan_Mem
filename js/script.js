@@ -45,7 +45,7 @@ var swiper = new Swiper(".product-slider", {
     loop: true,
     spaceBetween: 20,
     autoplay: {
-        delay: 7500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     centeredSlides: true,
