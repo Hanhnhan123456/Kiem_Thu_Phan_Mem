@@ -610,6 +610,12 @@ section {
     height: 3rem;
 }
 
+.footer .box-container .box .egg-img {
+    margin-top: 2rem;
+    height: 7rem;
+    margin: 1.5rem;
+}
+
 .footer .credit {
     text-align: center;
     margin-top: 2rem;
