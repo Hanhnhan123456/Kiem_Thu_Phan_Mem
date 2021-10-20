@@ -3,8 +3,8 @@
     Created on : Oct 20, 2021, 4:10:58 PM
     Author     : Admin
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.mycompany.online_medical_sales.model.Customer"%>
+<%@page language="java" contentType="text/html"  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
       <head>
@@ -88,14 +88,15 @@
                 <input type="submit" value="login now" class="btn">
             </form>
 
-            <form action="" class="register-form">
+            <form action="RegisterServlet" class="register-form" method="post">
             <h3>register now</h3>
-            <input type="text" placeholder="First name" class="box">
-            <input type="text" placeholder="Last name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="text" placeholder="Username" class="box">
-            <input type="password" placeholder="Password" class="box">
-            <input type="password" placeholder="Re-enter password" class="box">
+            <input type="text" placeholder="First name" class="box" name="firstName">
+            <input type="text" placeholder="Last name" class="box" name="lastName">
+            <input type="text" placeholder="Username" class="box" name="username">
+            <input type="password" placeholder="Password" class="box" name="password">
+            <input type="text" placeholder="Address" class="box" name="address">
+            <input type="text" placeholder="Phone number" class="box" name="phoneNumber">
+<!--            <input type="password" placeholder="Re-enter password" class="box">-->
             <input type="checkbox">
             <strong>I have read and agree to the <ins>Medical Sales operating
                     policies</ins></strong><br>
