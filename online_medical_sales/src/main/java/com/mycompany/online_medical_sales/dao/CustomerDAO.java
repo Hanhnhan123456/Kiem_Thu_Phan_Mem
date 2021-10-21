@@ -4,12 +4,8 @@
  */
 package com.mycompany.online_medical_sales.dao;
 
-import com.mycompany.online_medical_sales.model.ConnectDB;
 import com.mycompany.online_medical_sales.model.Customer;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  *
@@ -17,9 +13,9 @@ import java.sql.SQLException;
  */
 public class CustomerDAO {
     
-    private static String DB_URL = "jdbc:mysql://localhost:3306/online_medical_sales?useSSL=false";
-    private static String USER_NAME = "root";
-    private static String PASSWORD = "123qwe!@#";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/online_medical_sales?useSSL=false";
+    private static final String USER_NAME = "root";
+    private static final String PASSWORD = "123qwe!@#";
     
     public int registerCustomer(Customer customer) throws ClassNotFoundException {
 
