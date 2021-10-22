@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.online_medical_sales.beans.UserTest" time="0.079" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.online_medical_sales.beans.UserTest" time="0.132" tests="15" errors="3" skipped="0" failures="11">
   <properties>
+    <property name="netbeans.deploy" value="true"/>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -15,9 +16,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire6632581119460923244\surefirebooter16751162485470989465.jar C:\Users\Admin\AppData\Local\Temp\surefire6632581119460923244 2021-10-22T06-58-01_108-jvmRun1 surefire17182025082804044237tmp surefire_07200847833792677219tmp"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire13806383593069415086\surefirebooter1276032713144925158.jar C:\Users\Admin\AppData\Local\Temp\surefire13806383593069415086 2021-10-22T20-50-05_222-jvmRun1 surefire1811782995861984870tmp surefire_017716210743474527986tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.mycompany.online_medical_sales.beans.UserTest#testSetUsername"/>
     <property name="surefire.test.class.path" value="D:\GitHub\online_medical_sales\online_medical_sales\target\test-classes;D:\GitHub\online_medical_sales\online_medical_sales\target\classes;C:\Users\Admin\.m2\repository\jakarta\platform\jakarta.jakartaee-api\9.0.0\jakarta.jakartaee-api-9.0.0.jar;C:\Users\Admin\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Admin\.m2\repository\org\glassfish\web\jakarta.servlet.jsp.jstl\2.0.0\jakarta.servlet.jsp.jstl-2.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\2.0.0\jakarta.servlet.jsp.jstl-api-2.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\el\jakarta.el-api\4.0.0\jakarta.el-api-4.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.0\jakarta.xml.bind-api-3.0.0.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\2.0.0\jakarta.activation-2.0.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\Admin\.m2\repository\mysql\mysql-connector-java\8.0.24\mysql-connector-java-8.0.24.jar;C:\Users\Admin\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Admin"/>
@@ -31,9 +31,10 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire6632581119460923244\surefirebooter16751162485470989465.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire13806383593069415086\surefirebooter1276032713144925158.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="netbeans.deploy.clientUrlPart" value="/index.jsp"/>
     <property name="java.runtime.version" value="16.0.1+9-24"/>
     <property name="user.name" value="Admin"/>
     <property name="path.separator" value=";"/>
@@ -57,11 +58,103 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="testSetUsername" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.044">
+  <testcase name="testSetPassword" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.056">
     <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
-	at com.mycompany.online_medical_sales.beans.UserTest.testSetUsername(UserTest.java:145)
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetPassword(UserTest.java:173)
+</failure>
+    <system-out><![CDATA[setPassword
+]]></system-out>
+  </testcase>
+  <testcase name="testGetPassword" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.006">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetPassword(UserTest.java:158)
+]]></failure>
+    <system-out><![CDATA[getPassword
+]]></system-out>
+  </testcase>
+  <testcase name="testGetEmail" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.003">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetEmail(UserTest.java:104)
+]]></failure>
+    <system-out><![CDATA[getEmail
+]]></system-out>
+  </testcase>
+  <testcase name="testGetId" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.003">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetId(UserTest.java:51)
+</failure>
+    <system-out><![CDATA[getId
+]]></system-out>
+  </testcase>
+  <testcase name="testSetId" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002"/>
+  <testcase name="testGetAddress" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.003">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetAddress(UserTest.java:185)
+]]></failure>
+    <system-out><![CDATA[getAddress
+]]></system-out>
+  </testcase>
+  <testcase name="testFetchname" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <error message="Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;userList&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.iterator()" because "userList" is null
+	at com.mycompany.online_medical_sales.beans.UserTest.testFetchname(UserTest.java:245)
+</error>
+    <system-out><![CDATA[fetchname
+]]></system-out>
+  </testcase>
+  <testcase name="testGetName" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetName(UserTest.java:77)
+]]></failure>
+    <system-out><![CDATA[getName
+]]></system-out>
+  </testcase>
+  <testcase name="testFetchemail" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <error message="Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;userList&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.iterator()" because "userList" is null
+	at com.mycompany.online_medical_sales.beans.UserTest.testFetchemail(UserTest.java:229)
+</error>
+    <system-out><![CDATA[fetchemail
+]]></system-out>
+  </testcase>
+  <testcase name="testFetchadd" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <error message="Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;userList&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.iterator()" because "userList" is null
+	at com.mycompany.online_medical_sales.beans.UserTest.testFetchadd(UserTest.java:213)
+</error>
+    <system-out><![CDATA[fetchadd
+]]></system-out>
+  </testcase>
+  <testcase name="testSetUsername" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetUsername(UserTest.java:146)
 </failure>
     <system-out><![CDATA[setUsername
+]]></system-out>
+  </testcase>
+  <testcase name="testSetAddress" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.004">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetAddress(UserTest.java:200)
+</failure>
+    <system-out><![CDATA[setAddress
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUsername" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at com.mycompany.online_medical_sales.beans.UserTest.testGetUsername(UserTest.java:131)
+]]></failure>
+    <system-out><![CDATA[getUsername
+]]></system-out>
+  </testcase>
+  <testcase name="testSetName" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.003">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetName(UserTest.java:92)
+</failure>
+    <system-out><![CDATA[setName
+]]></system-out>
+  </testcase>
+  <testcase name="testSetEmail" classname="com.mycompany.online_medical_sales.beans.UserTest" time="0.002">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetEmail(UserTest.java:119)
+</failure>
+    <system-out><![CDATA[setEmail
 ]]></system-out>
   </testcase>
 </testsuite>

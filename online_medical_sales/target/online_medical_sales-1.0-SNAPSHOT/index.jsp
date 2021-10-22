@@ -79,7 +79,7 @@
                 <a href="#" class="btn">checkout</a>
             </div>
 
-            <form action="" class="login-form">
+            <form action="Controller" class="login-form" method="post">
                 <h3>login now</h3>
                 <input type="email" placeholder="Your username" class="box">
                 <input type="password" placeholder="Your password" class="box">

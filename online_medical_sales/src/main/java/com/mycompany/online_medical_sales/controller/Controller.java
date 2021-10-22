@@ -29,7 +29,6 @@ public class Controller extends HttpServlet {
 
 
         if (equals("register-form")) {
-        } else {
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String address = request.getParameter("address");
@@ -65,6 +64,35 @@ public class Controller extends HttpServlet {
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             }
         }
+        
+        if(equals("login-form")) {
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            
+            ConnectDB connectDB = new ConnectDB();
+            User user = new User();
+            boolean status = false;
+            try {
+                status = connectDB.checkUser(username, password);        
+            } catch (SQLException e) {
+            }
+            if(status) {
+                session = request.getSession();
+                session.setAttribute("session", session);
+                try {
+                    userList = connectDB.fetchUser();
+                } catch (SQLException e) {
+                }
+                session.setAttribute("address", user.fetchadd(userList, username));
+                session.setAttribute("email", user.fetchemail(userList, username));
+                session.setAttribute("name", user.fetchname(userList, username));
+                session.setAttribute("username", username);
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+            } else {
+                request.setAttribute("msg", "Invalid Crediantials");
+                request.setAttribute("username", username);
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+            }
+        }
     }
-
 }
