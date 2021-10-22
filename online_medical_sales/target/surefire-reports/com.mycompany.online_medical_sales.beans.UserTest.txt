@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.online_medical_sales.beans.UserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.079 s <<< FAILURE! - in com.mycompany.online_medical_sales.beans.UserTest
+testSetUsername  Time elapsed: 0.044 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at com.mycompany.online_medical_sales.beans.UserTest.testSetUsername(UserTest.java:145)
+

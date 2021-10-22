@@ -3,7 +3,7 @@
     Created on : Oct 20, 2021, 4:10:58 PM
     Author     : Admin
 --%>
-<%@page import="com.mycompany.online_medical_sales.model.Customer"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page language="java" contentType="text/html"  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -88,22 +88,18 @@
                 <input type="submit" value="login now" class="btn">
             </form>
 
-            <form action="RegisterServlet" class="register-form" method="post">
+            <form class="register-form" action="Controller" method="post">
             <h3>register now</h3>
-            <input type="text" placeholder="First name" class="box" name="firstName">
-            <input type="text" placeholder="Last name" class="box" name="lastName">
-            <input type="text" placeholder="Username" class="box" name="username">
-            <input type="password" placeholder="Password" class="box" name="password">
-            <input type="text" placeholder="Address" class="box" name="address">
-            <input type="text" placeholder="Phone number" class="box" name="phoneNumber">
-<!--            <input type="password" placeholder="Re-enter password" class="box">-->
-            <input type="checkbox">
-            <strong>I have read and agree to the <ins>Medical Sales operating
-                    policies</ins></strong><br>
-            <input type="checkbox">
-            <strong> I agree to receive newsletters from Medical Sales via
-                email</strong>
-            <input type="submit" value="register now" class="btn">
+            <input class="box" type="text" name="name" placeholder="Name goes here" value="<c:out value="${name }"></c:out>" required>
+            <input class="box" type="text" name="address" placeholder="Your address goes here" value="<c:out value="${address }"></c:out>" required>
+            <input class="box" type="email" name="email" placeholder="Your email address" value="<c:out value="${email }"></c:out>" required>
+            <input class="box" type="text" name="username" placeholder="Username" value="<c:out value="${username }"></c:out>" required>
+            <input class="box" type="password" name="password_1" placeholder="Enter password" required>
+            <input class="box" type="password" name="password_2" placeholder="Re-enter password" required>
+            <input type="submit" name="register" value="register now" class="btn">
+            <p>
+                Already have an account? <a href="#" style="color:#F24638;">Login now!</a>
+            </p>
         </form>
 
             
