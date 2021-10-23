@@ -1,45 +1,45 @@
-///*
-// * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-// * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
-// */
-//package com.mycompany.online_medical_sales.beans;
-//
-//import java.util.ArrayList;
-//import org.junit.jupiter.api.AfterEach;
-//import org.junit.jupiter.api.AfterAll;
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.BeforeAll;
-//import org.junit.jupiter.api.Test;
-//import static org.junit.jupiter.api.Assertions.*;
-//
-///**
-// *
-// * @author Admin
-// */
-//public class UserTest {
-//    
-//    public UserTest() {
-//    }
-//    
-//    @BeforeAll
-//    public static void setUpClass() {
-//    }
-//    
-//    @AfterAll
-//    public static void tearDownClass() {
-//    }
-//    
-//    @BeforeEach
-//    public void setUp() {
-//    }
-//    
-//    @AfterEach
-//    public void tearDown() {
-//    }
-//
-//    /**
-//     * Test of getId method, of class User.
-//     */
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ */
+package com.mycompany.online_medical_sales.beans;
+
+import java.util.ArrayList;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ *
+ * @author Admin
+ */
+public class UserTest {
+    
+    public UserTest() {
+    }
+    
+    @BeforeAll
+    public static void setUpClass() {
+    }
+    
+    @AfterAll
+    public static void tearDownClass() {
+    }
+    
+    @BeforeEach
+    public void setUp() {
+    }
+    
+    @AfterEach
+    public void tearDown() {
+    }
+
+    /**
+     * Test of getId method, of class User.
+     */
 //    @Test
 //    public void testGetId() {
 //        System.out.println("getId");
@@ -50,24 +50,23 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setId method, of class User.
-//     */
-//    @Test
-//    public void testSetId() {
-//        System.out.println("setId");
-//        int id = 24;
-//        User instance = new User();
-//        instance.setId(id);
-//        int expected = 24;
-//        assertEquals(expected, instance.getId());
-//        
-//    }
-//
-//    /**
-//     * Test of getName method, of class User.
-//     */
+
+    /**
+     * Test of setId method, of class User.
+     */
+    @Test
+    public void testSetId() {
+        System.out.println("setId");
+        int id = 24;
+        User instance = new User();
+        instance.setId(id);
+        int expected = 24;
+        assertEquals(expected, instance.getId());
+    }
+
+    /**
+     * Test of getName method, of class User.
+     */
 //    @Test
 //    public void testGetName() {
 //        System.out.println("getName");
@@ -78,10 +77,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setName method, of class User.
-//     */
+
+    /**
+     * Test of setName method, of class User.
+     */
 //    @Test
 //    public void testSetName() {
 //        System.out.println("setName");
@@ -91,10 +90,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of getEmail method, of class User.
-//     */
+
+    /**
+     * Test of getEmail method, of class User.
+     */
 //    @Test
 //    public void testGetEmail() {
 //        System.out.println("getEmail");
@@ -105,10 +104,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setEmail method, of class User.
-//     */
+
+    /**
+     * Test of setEmail method, of class User.
+     */
 //    @Test
 //    public void testSetEmail() {
 //        System.out.println("setEmail");
@@ -118,10 +117,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of getUsername method, of class User.
-//     */
+
+    /**
+     * Test of getUsername method, of class User.
+     */
 //    @Test
 //    public void testGetUsername() {
 //        System.out.println("getUsername");
@@ -132,23 +131,23 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setUsername method, of class User.
-//     */
-//    @Test
-//    public void testSetUsername() {
-//        System.out.println("setUsername");
-//        String username = "";
-//        User instance = new User();
-//        instance.setUsername(username);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of getPassword method, of class User.
-//     */
+
+    /**
+     * Test of setUsername method, of class User.
+     */
+    @Test
+    public void testSetUsername() {
+        System.out.println("setUsername");
+        String username = "abc";
+        User instance = new User();
+        instance.setUsername(username);
+        String expected = "abc";
+        assertEquals(expected, instance.getUsername());
+    }
+
+    /**
+     * Test of getPassword method, of class User.
+     */
 //    @Test
 //    public void testGetPassword() {
 //        System.out.println("getPassword");
@@ -159,10 +158,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setPassword method, of class User.
-//     */
+
+    /**
+     * Test of setPassword method, of class User.
+     */
 //    @Test
 //    public void testSetPassword() {
 //        System.out.println("setPassword");
@@ -172,10 +171,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of getAddress method, of class User.
-//     */
+
+    /**
+     * Test of getAddress method, of class User.
+     */
 //    @Test
 //    public void testGetAddress() {
 //        System.out.println("getAddress");
@@ -186,10 +185,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of setAddress method, of class User.
-//     */
+
+    /**
+     * Test of setAddress method, of class User.
+     */
 //    @Test
 //    public void testSetAddress() {
 //        System.out.println("setAddress");
@@ -199,10 +198,10 @@
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-//
-//    /**
-//     * Test of fetchadd method, of class User.
-//     */
+
+    /**
+     * Test of fetchadd method, of class User.
+     */
 //    @Test
 //    public void testFetchadd() {
 //        System.out.println("fetchadd");
@@ -248,4 +247,4 @@
 //        fail("The test case is a prototype.");
 //    }
 //    
-//}
+}

@@ -1,0 +1,4 @@
+# Created at 2021-10-23T00:45:54.950
+Boot Manifest-JAR contains absolute paths in classpath 'D:\GitHub\online_medical_sales\online_medical_sales\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
