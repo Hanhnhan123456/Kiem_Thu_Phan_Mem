@@ -1,0 +1,5 @@
+com\mycompany\online_medical_sales\beans\User.class
+com\mycompany\online_medical_sales\controller\Controller.class
+com\mycompany\online_medical_sales\JakartaRestConfiguration.class
+com\mycompany\online_medical_sales\resources\JakartaEE9Resource.class
+com\mycompany\online_medical_sales\model\ConnectDB.class
